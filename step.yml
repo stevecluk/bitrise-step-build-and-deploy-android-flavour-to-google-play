@@ -32,7 +32,7 @@ host_os_tags:
 # project_type_tags:
 #   - ios
 #   - macos
-#   - android
+    - android
 #   - xamarin
 #   - react-native
 #   - cordova
@@ -43,6 +43,8 @@ host_os_tags:
 # https://github.com/bitrise-io/bitrise/blob/master/_docs/step-development-guideline.md
 type_tags:
   - deploy
+  - build
+  - code-sign
 
 is_requires_admin_user: true
 is_always_run: false
@@ -75,6 +77,10 @@ inputs:
       is_expand: true
       is_required: true
       value_options: []
+
+  - build_flavour: buildRelease
+    opts: 
+        title: "Gradle flavour build"
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
