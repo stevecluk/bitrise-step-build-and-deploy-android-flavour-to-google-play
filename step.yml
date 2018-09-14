@@ -77,11 +77,11 @@ inputs:
       is_expand: true
       is_required: true
       value_options: []
-
-  - build_flavour: buildRelease
+  - build_flavour: ""
     opts: 
-        title: "Gradle flavour build"
-        summary: "Some summary text"
+        title: Gradle flavour build
+        summary: | 
+          Some summary text
         description: |- 
           Some description text
 
