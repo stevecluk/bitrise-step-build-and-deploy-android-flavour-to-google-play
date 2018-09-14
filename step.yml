@@ -81,6 +81,11 @@ inputs:
   - build_flavour: buildRelease
     opts: 
         title: "Gradle flavour build"
+        summary: "Some summary text"
+        description: |- 
+          Some description text
+
+        is_required: true 
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
